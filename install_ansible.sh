@@ -8,7 +8,7 @@ yum install ansible -y
 cd /etc/ansible
 wget https://code.lb2.com.br/pd/migration-dashboard-ansible/repository/archive.zip?ref=master --no-check-certificate
 unzip archive.zip?ref=master
-mv /etc/ansible/migration-dashboard-ansible-*/* /etc/ansible
+mv /etc/ansible/migration-dashboard-ansible-*/* /etc/ansible -f -b
 rm -rf /etc/ansible/migration-dashboard-ansible-*
 rm /etc/ansible/archive.zip?ref=master
 
